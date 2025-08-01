@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	padding: 2rem;
+}
+
+.new-task {
+	margin-bottom: 1rem;
+}
+
+#task-input {
+	padding: 0.5rem;
+	width: 200px;
+}
+
+#add-button {
+	padding: 0.5rem 1rem;
+}
