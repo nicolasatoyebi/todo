@@ -66,6 +66,19 @@ function renderTasks() {
 
 // Event listener for adding a task
 addButton.addEventListener("click", () => {
+	addTask(taskInput.value);
+});
+
+// Allow “Enter” to add the task
+taskInput.addEventListener("keypress", (e) => {
+	if (e.key === "Enter") {
+		addTask(taskInput.value);
+	}
+});
+
+// Initial render (in case you load some default tasks)
+renderTasks();
+addButton.addEventListener("click", () => {
 	// TODO: call addTask()
 });
 
